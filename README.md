@@ -4,9 +4,9 @@
 
 * Visualización de rutas básicas en express.js
 
-### GET (dev02)
+### HTTP Requests (dev02)
 
-* Rutas GET de REST
+* GET, POST, PUT, DELETE
 * Params (obligatorios)
 * Query-Params (opcionales)
 * Choque de Rutas (issue)
