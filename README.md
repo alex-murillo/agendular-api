@@ -8,5 +8,6 @@
 
 * GET, POST, PUT, DELETE
 * Params (obligatorios)
-* Query-Params (opcionales)
+* Query-Params (opcional)
+* Body (opcional)
 * Choque de Rutas (issue)
