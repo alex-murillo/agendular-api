@@ -1,5 +1,5 @@
 {
-    "buildCommand": "npm run migrations:run && npm start",
+    "buildCommand": "npm run migrations:run",
     "rewrites": [
         {
             "source": "/api/(.*)",
