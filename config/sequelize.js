@@ -6,7 +6,7 @@ const setupModels = require('../db/models')
 
 const sequelize = new Sequelize({
     dialect: 'sqlite',
-    storage: './api/database.db',
+    storage: './database.db',
     logging: true
 })
 

@@ -1,16 +1,16 @@
 // Crear nuevas rutas de dailies para agendular (dev06)
 
 const express = require("express");
-const DailiesService = require("../services/dailies.service");
+const DailiesService = require("../../services/dailies.service");
 
 // Middlewares de Ruta (dev09)
-const validatorHandler = require("../middlewares/validator.middleware");
+const validatorHandler = require("../../middlewares/validator.middleware")
 
 // Middlewares de Ruta (dev09)
 const {
     createDailySchema,
     updateDailySchema,
-} = require("../schemas/daily.schema");
+} = require("../../schemas/daily.schema");
 
 const router = express.Router(); // Router
 const service = new DailiesService(); // Dailies Service
