@@ -1,5 +1,5 @@
 {
-    "buildCommand": "npm run migrations:run",
+    "buildCommand": "npm run migrations:run && npm run vercel-build",
     "rewrites": [
         {
             "source": "/api/(.*)",
