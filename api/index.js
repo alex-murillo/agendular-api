@@ -16,9 +16,9 @@ app.get('/api', (req, res) => {
     res.send('Agendular API')
 })
 
-app.use(errorHandler)
 app.use(loggerError)
 app.use(boomErrorHandler)
+app.use(errorHandler)
 routerAPI(app)
 
 

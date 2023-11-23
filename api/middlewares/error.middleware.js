@@ -1,17 +1,17 @@
 function loggerError(error, req, res, next) {
     // eslint-disable-next-line no-console
     console.error(error)
+
     next(error)
 }
 
-function errorHandler(error, req, res) {
+// eslint-disable-next-line no-unused-vars
+function errorHandler(error, req, res, next) {
 
-    if (error) {
-        res.status(500).json({
-            message: error.message,
-            stack: error.stack
-        })
-    }
+    res.status(500).json({
+        message: error.message,
+        stack: error.stack
+    })
 }
 
 function boomErrorHandler(err, req, res, next) {
