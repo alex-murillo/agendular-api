@@ -1,6 +1,5 @@
 {
-    "buildCommand": "vercel build",
-    "rewrites": [
+    "routes": [
         {
             "source": "/api/(.*)",
             "destination": "/api/index.js"
