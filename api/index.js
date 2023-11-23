@@ -4,7 +4,7 @@ const cors = require('cors')
 const app = express()
 const PORT = process.env.PORT || 3000
 
-const { loggerError, errorHandler, boomErrorHandler } = require('../middlewares/error.middleware')
+const { loggerError, errorHandler, boomErrorHandler } = require('./middlewares/error.middleware')
 
 app.use(cors())
 app.use(express.json()) // middleware (dev04)
@@ -16,11 +16,11 @@ app.get('/api', (req, res) => {
     res.send('Agendular API')
 })
 
-routerAPI(app)
-
+app.use(errorHandler)
 app.use(loggerError)
 app.use(boomErrorHandler)
-app.use(errorHandler)
+routerAPI(app)
+
 
 app.listen(PORT, () => {
     // eslint-disable-next-line no-console
